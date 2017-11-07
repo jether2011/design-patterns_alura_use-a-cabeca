@@ -2,9 +2,10 @@ package com.jetherrodrigues.strategy.payment;
 
 import java.util.Optional;
 
+@SuppressWarnings("unused")
 public class ApplicationUsingReflection {
 
-	private static final String CASH = "com.jetherrodrigues.strategy.payment.Cash";
+	private static final String CASH = "com.jetherrodrigues.strategy.payment.Cash";	
 	private static final String CREDIT = "com.jetherrodrigues.strategy.payment.CreditCard";
 	private static final String DEBIT = "com.jetherrodrigues.strategy.payment.DebitCard";
 	
