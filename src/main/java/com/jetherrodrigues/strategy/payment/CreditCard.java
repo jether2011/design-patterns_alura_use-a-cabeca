@@ -1,6 +1,7 @@
 package com.jetherrodrigues.strategy.payment;
 
 public class CreditCard extends Card {
+	private final String type = "CreditCard";
 
 	public CreditCard(String nameOnCard, String number, String cvv, String expirationDate) {
 		super(nameOnCard, number, cvv, expirationDate);
@@ -8,7 +9,7 @@ public class CreditCard extends Card {
 
 	@Override
 	protected String getType() {
-		return "CreditCard";
+		return this.type;
 	}
 
 	@Override

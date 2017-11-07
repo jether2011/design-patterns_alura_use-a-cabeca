@@ -1,6 +1,7 @@
 package com.jetherrodrigues.strategy.payment;
 
 public class DebitCard extends Card {
+	private final String type = "DebitCard";
 
 	public DebitCard(String nameOnCard, String number, String cvv, String expirationDate) {
 		super(nameOnCard, number, cvv, expirationDate);
@@ -8,7 +9,7 @@ public class DebitCard extends Card {
 
 	@Override
 	protected String getType() {
-		return null;
+		return this.type;
 	}
 
 	@Override
